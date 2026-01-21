@@ -1,0 +1,11 @@
+name = "feedback-collector"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "feedback-db"
+database_id = "PASTE_YOUR_DB_ID_HERE"
+
+[triggers]
+crons = ["*/30 * * * *"]
