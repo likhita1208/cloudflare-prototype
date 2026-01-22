@@ -24,14 +24,14 @@ Create a D1 database in your Cloudflare Dashboard named `feedback-db`.
 ```bash
 npx wrangler d1 create feedback-db
 
-2. Connect to Cloudflare
+### 2. Connect to Cloudflare
 Log in to the Cloudflare Dashboard.
 
 Go to Workers & Pages -> Create Application -> Connect to Git.
 
 Select this repository.
 
-3. Deploy Microservices
+### 3. Deploy Microservices
 You must deploy this repo three times (once for each worker), setting the specific Root Directory for each:
 
 App 1 (Collector): Set Root Directory to collector.
@@ -40,7 +40,7 @@ App 2 (Dashboard): Set Root Directory to dashboard.
 
 App 3 (Reporter): Set Root Directory to reporter.
 
-4. Configure Secrets
+### 4. Configure Secrets
 For the Reporter worker, go to Settings > Variables in the Cloudflare Dashboard and add:
 
 RESEND_API_KEY: Your email service API key.
